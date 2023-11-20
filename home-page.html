@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER --------- JUST MOBILE -->
+    <div id="display-none" class="container bg-white">
+        <div class="column">
+            <div class="d-flex flex-sm-row justify-content-between px-2 my-2">
+                <div>
+                    <a href="/home-page.html">
+                        <box-icon name='spa'></box-icon>
+                    </a>
+                </div>
+                <div class="d-flex flex-sm-row align-items-center">
+                    <box-icon class="mx-3" name='message' flip='horizontal'></box-icon>
+                    <box-icon style="height: 30px; width: 30px;" id="display-none" class="" name='menu'
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    </box-icon>
+                </div>
+            </div>
+            <div class="d-flex align-items-center pesquisar mb-2 mx-auto">
+                <box-icon class="mx-2" name='search'></box-icon>
+                <span class="">Buscar</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Off-Canvas ------------------>
+    <div id="display-none">
+        <div style="max-width: 200px;" class="offcanvas-sm offcanvas-end" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-body">
+                <div class="column col-7 ps-3 mt-2 menu-f">
+                    <a href="/pages/contact.html" class="text-decoration-none">
+                        <div class="row"><button type="button" class="btn btn-lg btn-dark rounded-3">Contato</button>
+                        </div>
+                    </a>
+                    <a href="/pages/streetwear/streetwear-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 pt-3 pb-2">StreetWear</div>
+                    </a>
+                    <a href="/pages/sportwear/sportwear-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">SportWear</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Vintage</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">CasualChic</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Minimalista</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Romantico</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Clássico</div>
+                    </a>
+                    <a href="" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Gótico</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------->
+
+
+    <!-- HEADER PC ---------------------->
+    <div id="display-none-mobile" class="col-12 mb-3">
+        <div class="bg-white menu-f py-4">
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="mx-3">
+                    <a href="/home-page.html">
+                        <box-icon name='spa'></box-icon>
+                    </a>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <a href="/pages/streetwear/streetwear-page.html"
+                        class="text-decoration-none text-black px-3 "><span>StreetWear</span></a>
+                    <a href="/pages/sportwear/sportwear-page.html"
+                        class="text-decoration-none text-black px-3 "><span>SportWear</span></a>
+                    <a href="#" class="text-decoration-none text-black px-3 "><span>Vintage</span></a>
+                    <a href="#" class="text-decoration-none text-black px-3 "><span>CasualChic</span></a>
+                    <a href="#" class="text-decoration-none text-black px-3 "><span>Minimalista</span></a>
+                    <a href="#" class="text-decoration-none text-black px-3 "><span>Romantico</span></a>
+                    <a href="#" class="text-decoration-none text-black px-3 "><span>Clássico</span></a>
+                    <a href="#" class="text-decoration-none text-black px-3 "><span>Gótico</span></a>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="search-box">
+                        <input type="text" class="search-text" placeholder="Pesquisar">
+                        <a href="#" class="search-btn"><box-icon name='search'></box-icon></a>
+                    </div>
+                    <a href="/pages/contact.html"><box-icon class="mx-3 mt-1" name='message' flip='horizontal'></box-icon></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carrosel -->
+        <div class="row promotion py-3 mx-0">
+            <div id="carouselExample" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active text-center">
+                        <span class="">
+                            <box-icon name='closet'></box-icon> Veja as modas em alta
+                        </span>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <span class="align-items-center">
+                            <box-icon type='solid' name='discount'></box-icon><strong>BLACK FRIDAY</strong> - Tudo de
+                            promoção
+                        </span>
+                    </div>
+                    <div class="carousel-item text-center">
+                        <span class="">Entre em contato conosco agora</span>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!---------------------------->
+
+
+    <!-- Conteúdo MOBILE -->
+    <div id="display-none" class="p-3 bg-pastel">
+        <img src="/images/img-promotion.jpg" alt="Promoção" class="w-100">
+        <div>
+            <div class="text-center mt-4 bg-white px-3 py-4 m-card">
+                <span class="t-stittle text-black fs-6">Você nunca terá uma segunda chance de causar uma primeira impressão!</span>
+                <a href="#" class="t-tittle"><button class="btn btn-lg btn-dark rounded-3 mt-4 col-10">Ver serviços</button></a>
+            </div>
+
+        </div>
+    </div>
+    
+    <!-- Conteúdo PC -->
+    <div id="display-none-mobile" class="">
+        <img src="/images/desktop/img-promotion.jpg" alt="Promoção" class="w-100">
+        <div class="d-flex flex-column text-center my-3 p-3">
+            <span class="t-tittle text-black fs-3 mb-2">" Você nunca terá uma segunda chance de causar uma primeira impressão "</span>
+            <a href="#" class="m-3"><button class="btn btn-lg btn-dark t-tittle fs-4 rounded-3">Ver serviços</button></a>
+        </div>
+
+        <img  class="w-100" src="/images/desktop/closet.jpg" alt="Imagem">
+
+        <div class="d-flex flex-row justify-content-around align-items-center p-5 mx-auto mb-4 col-8">
+            <div class="vr"></div>
+            <div class="d-flex flex-column">
+                <span class="t-tittle text-center">Sobre se vestir</span>
+                <br>
+                <span class="t-tittle t-indent fs-5 px-4">Vestir é um gesto diário. Esse hábito pode ser feito de maneira consciente ou inconsciente. Na ponta do lápis de uma agenda cheia e um dia corrido, a última coisa que a gente quer, é perder tempo pensando e provando roupas. Não é mesmo?</span>
+                <br>
+                <span class="t-tittle t-indent fs-5 px-4">Nestes casos, as chances de você vestir algo que não te deixa tão bem, usar muitas roupas confortáveis porém não tão elegantes, ou cair na velha sensação de estar sempre com a mesma roupa, são grandes, pois você está fazendo isso no piloto automático.</span>
+                <br>
+                <span class="t-tittle text-center fs-5">Confira a seguir alguns estilos que separamos pra você!</span>
+            </div>
+            <div class="vr"></div>
+        </div>
+    </div>
+    
+
+
+
+
+    <!-- IMAGENS ----------------->
+
+    <div class="bg-pastel mx-0 col-12">
+        <div class="column">
+
+            <div class="d-xl-flex justify-content-xl-evenly">
+                <!-- Organizar para PC -- Linha 1 ---->
+
+                <div class="row">
+                    <a href="/pages/streetwear/streetwear-page.html">
+                        <div class="position-relative d-flex my-2 h-card">
+                            <img class="rounded mx-auto d-block" src="/images/img-streetwear.jpg">
+                            <h1 class="position-absolute top-50 start-50 translate-middle t-img z-1">StreetWear</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <a href="/pages/sportwear/sportwear-page.html">
+                        <div class="position-relative d-flex my-2 h-card">
+                            <img class="rounded mx-auto d-block" src="/images/img-sportwear.jpg">
+                            <h1 class="position-absolute top-50 start-50 translate-middle t-img">SportWear</h1>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="row">
+                    <div class="position-relative d-flex my-2 h-card">
+                        <img class="rounded mx-auto d-block" src="/images/img-vintage.jpg">
+                        <h1 class="position-absolute top-50 start-50 translate-middle t-img">Vintage</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="position-relative d-flex my-2 h-card">
+                        <img class="rounded mx-auto d-block" src="/images/img-casualchic.jpg">
+                        <h1 class="position-absolute top-50 start-50 translate-middle t-img">CasualChic</h1>
+                    </div>
+                </div>
+
+            </div> <!-- Fim -- Linha 1 ---->
+
+
+            <div class="d-xl-flex justify-content-xl-evenly mt-xl-3">
+                <!-- Organizar para PC -- Linha 2 ---->
+                <div class="row">
+                    <div class="position-relative d-flex my-2 h-card">
+                        <img class="rounded mx-auto d-block" src="/images/img-minimalista.jpg">
+                        <h1 class="position-absolute top-50 start-50 translate-middle t-img">Minimalista</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="position-relative d-flex my-2 h-card">
+                        <img class="rounded mx-auto d-block" src="/images/img-romantic.jpg">
+                        <h1 class="position-absolute top-50 start-50 translate-middle t-img">Romantico</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="position-relative d-flex my-2 h-card">
+                        <img class="rounded mx-auto d-block" src="/images/img-classic.jpg">
+                        <h1 class="position-absolute top-50 start-50 translate-middle t-img">Clássico</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="position-relative d-flex my-2 h-card">
+                        <img class="rounded mx-auto d-block" src="/images/img-gotico.jpg">
+                        <h1 class="position-absolute top-50 start-50 translate-middle t-img">Gótico</h1>
+                    </div>
+                </div>
+            </div> <!-- FIM -- Linha 2 ---->
+
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black mt-1 mt-xl-4 mx-0">
+        <div class="column text-center">
+            <div class="row py-5 mx-0">
+                <a href="#" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Contato | Acessoria</h4>
+                </a>
+                <a href="#" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Sobre a empresa</h4>
+                </a>
+                <a href="#" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Termos de Segurança</h4>
+                </a>
+                <a href="#" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Termos de Privacidade</h4>
+                </a>
+            </div>
+            <div class="row mx-3">
+                <h4 class="text-light py-3 b-footer t-footer">Todos os direitos reservados.<br>Outubro,
+                    2023.<br>4kfullHd</h4>
+            </div>
+            <div class="p-2"></div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
