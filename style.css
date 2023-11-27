@@ -31,11 +31,18 @@ body {
         width: 100vw;
     }
 
-    /*
-    .bg-pastel {
-        background-color: var(--color-background);
-    } 
-    */
+    
+    .bg-xl-pastel {
+        background-image: url(/images/desktop/fundo.jpg);
+        background-size: 100%;
+    }
+    .bg-freestyle{
+        background-image: url(/images/desktop/fundo.jpg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+    }
+    
 
     .t-h1 {
         color: #FFF;
@@ -75,6 +82,16 @@ body {
         line-height: normal;
     }
 
+    .t-pages{
+        color: #000;
+        text-align: center;
+        font-family: Lexend;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
     .t-offc {
         color: #000;
         text-align: center;
@@ -94,10 +111,16 @@ body {
         line-height: normal;
     }
 
+    .font{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
     .b-footer {
-        border-bottom: solid white 1px;
-        border-top: solid white 1px;
-        border-width: 50%;
+        border-top: solid rgba(255, 255, 255, 0.458) .5px;
+        border-bottom: solid rgba(255, 255, 255, 0.458) .5px;
     }
 
     .menu-f {
@@ -119,14 +142,38 @@ body {
     }
 
     .h-card {
-        filter: blur(1px) brightness(0.8);
+        filter: blur(0) brightness(1);
         transition: 1s;
     }
 
     .h-card:hover {
-        filter: blur(0) brightness(1);
+        filter: blur(1px) brightness(0.8);
         transition: 1s;
     }
+
+    .t-indent{
+        text-indent: 60px;
+        text-align: justify;
+    }
+
+    .config-pages{
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 70px;
+        border: 3px solid;
+        box-shadow: 7px 7px;
+    }
+
+    .carousel-config{
+        border: 5px dotted;
+        max-width: 320px;
+    }
+
+
+    
+    /* ---- Search Box ---- */
 
     .search-box{
         margin-top: -5px;
@@ -164,15 +211,10 @@ body {
     }
     .search-box:hover{
         background: var(--color-background);
+    }
 
-    }
-    .t-indent{
-        text-indent: 60px;
-        text-align: justify;
-    }
 
     /*--------- ID's --------*/
-
 
     #display-none {
         display: none;
@@ -181,6 +223,65 @@ body {
     #rounded-a {
         border-radius: 40px;
     }
+
+
+    /* -------- Home-page Hovers -------- */
+
+    #m-pessoal-img{
+        filter: brightness(100%) grayscale(100%);
+        transition: .3s;
+    }
+    #m-pessoal-txt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    #m-pessoal:hover > #m-pessoal-txt {
+        visibility: visible;
+        opacity: 1;
+    }
+    #m-pessoal:hover > #m-pessoal-img{
+        filter: brightness(20%) grayscale(100%);
+    }
+
+    
+
+    #lotus-img{
+        filter: brightness(100%) grayscale(100%);
+        transition: .3s;
+    }
+    #lotus-txt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    #lotus:hover > #lotus-txt {
+        visibility: visible;
+        opacity: 1;
+    }
+    #lotus:hover > #lotus-img{
+        filter: brightness(20%) grayscale(100%);
+    }
+
+
+
+    #m-corporativo-img{
+        filter: brightness(100%) grayscale(100%);
+        transition: .3s;
+    }
+    #m-corporativo-txt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    #m-corporativo:hover > #m-corporativo-txt {
+        visibility: visible;
+        opacity: 1;
+    }
+    #m-corporativo:hover > #m-corporativo-img{
+        filter: brightness(20%) grayscale(100%);
+    }
+
 
 
 
@@ -270,6 +371,16 @@ body {
     .t-anottation {
         color: #000;
         font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .t-pages{
+        color: #000;
+        text-align: center;
+        font-family: Lexend;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -370,6 +481,17 @@ body {
         box-shadow: rgba(0, 0, 0, 0.556) 0 0 20px;
     }
 
+    .font{
+        font-family: 'Inter', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .carousel-config{
+        width: 100vw;
+    }
+
     textarea::placeholder,
     input::placeholder {
         color: #928A8A !important;
@@ -400,7 +522,34 @@ body {
 
     .size-offc {
         height: 60vh;
+    }    
+    
+    .h-card {
+        filter: blur(0) brightness(1);
+        transition: 1s;
     }
+
+    .h-card:hover {
+        filter: blur(1px) brightness(0.8);
+        transition: 1s;
+    }
+
+    .search-mobile{
+        background: none;
+        border: 0;
+        appearance: none;
+    }
+    .search-mobile:focus{
+        outline: none;
+        appearance: none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+        border: 0;
+    }
+
+
+
+    /* ------ ID's ------ */
 
     #rounded-a {
         border-radius: 17px;
@@ -410,14 +559,61 @@ body {
         display: none;
     }
 
-    .h-card {
-        filter: blur(0) brightness(1);
-        transition: 1s;
+    /* -------- Home-page Hovers -------- */
+
+    #m-pessoal-img{
+        filter: brightness(100%) grayscale(100%);
+        transition: .3s;
+    }
+    #m-pessoal-txt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    #m-pessoal:hover > #m-pessoal-txt {
+        visibility: visible;
+        opacity: 1;
+    }
+    #m-pessoal:hover > #m-pessoal-img{
+        filter: brightness(20%) grayscale(100%);
     }
 
-    .h-card:hover {
-        filter: blur(1px) brightness(0.8);
-        transition: 1s;
+    
+
+    #lotus-img{
+        filter: brightness(100%) grayscale(100%);
+        transition: .3s;
+    }
+    #lotus-txt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    #lotus:hover > #lotus-txt {
+        visibility: visible;
+        opacity: 1;
+    }
+    #lotus:hover > #lotus-img{
+        filter: brightness(20%) grayscale(100%);
+    }
+
+
+
+    #m-corporativo-img{
+        filter: brightness(100%) grayscale(100%);
+        transition: .3s;
+    }
+    #m-corporativo-txt{
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.3s, opacity 0.3s linear;
+    }
+    #m-corporativo:hover > #m-corporativo-txt {
+        visibility: visible;
+        opacity: 1;
+    }
+    #m-corporativo:hover > #m-corporativo-img{
+        filter: brightness(20%) grayscale(100%);
     }
 
 }
