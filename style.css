@@ -24,7 +24,7 @@ body {
 
     .start-page {
         font-family: 'Lexend', sans-serif;
-        background-image: url(/images/desktop/start-page-background.jpg);
+        background-image: url(images/desktop/start-page-background.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         height: 100vh;
@@ -33,11 +33,11 @@ body {
 
     
     .bg-xl-pastel {
-        background-image: url(/images/desktop/fundo.jpg);
+        background-image: url(images/desktop/fundo.jpg);
         background-size: 100%;
     }
     .bg-freestyle{
-        background-image: url(/images/desktop/fundo.jpg);
+        background-image: url(images/desktop/fundo.jpg);
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: 100%;
@@ -147,7 +147,7 @@ body {
     }
 
     .h-card:hover {
-        filter: blur(1px) brightness(0.8);
+        filter: blur(1px) brightness(0.6);
         transition: 1s;
     }
 
