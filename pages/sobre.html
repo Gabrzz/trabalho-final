@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- HEADER --------- JUST MOBILE -->
+    <div id="display-none" class="container bg-white">
+        <div class="column">
+            <div class="d-flex flex-sm-row justify-content-between px-2 my-2">
+                <div>
+                    <a href="/home-page.html">
+                        <box-icon name='spa'></box-icon>
+                    </a>
+                </div>
+                <div class="d-flex flex-sm-row align-items-center">
+                    <a href="/pages/contact.html" style="max-height: 24px;"><box-icon class="mx-3" name='message' flip='horizontal'></box-icon></a>
+                    <box-icon style="height: 30px; width: 30px;" id="display-none" class="" name='menu'
+                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                    </box-icon>
+                </div>
+            </div>
+            <div class="d-flex align-items-center pesquisar mb-2 mx-auto">
+                <box-icon class="mx-2" name='search'></box-icon>
+                <input class="search-mobile" type="text" placeholder="Buscar...">
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Off-Canvas ------------------>
+    <div id="display-none">
+        <div style="max-width: 200px;" class="offcanvas-sm offcanvas-end" tabindex="-1" id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-body">
+                <div class="column col-7 ps-3 mt-2 menu-f">
+                    <a href="contact.html" class="text-decoration-none">
+                        <div class="row"><button type="button" class="btn btn-lg btn-dark rounded-3">Contato</button>
+                        </div>
+                    </a>
+                    <a href="streetwear/streetwear-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 pt-3 pb-2">StreetWear</div>
+                    </a>
+                    <a href="sportwear/sportwear-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">SportWear</div>
+                    </a>
+                    <a href="vintage/vintage-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Vintage</div>
+                    </a>
+                    <a href="casualChic/casualChic-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">CasualChic</div>
+                    </a>
+                    <a href="minimalista/minimalista-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Minimalista</div>
+                    </a>
+                    <a href="romantic/romantic-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Romantico</div>
+                    </a>
+                    <a href="classico/classico-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Clássico</div>
+                    </a>
+                    <a href="gotico/gotico-page.html" class="text-decoration-none text-reset">
+                        <div class="row px-1 py-2">Gótico</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------------------------------->
+
+
+    <!-- HEADER PC ---------------------->
+    <div id="display-none-mobile" class="col-12 mb-3">
+        <div class="bg-white menu-f py-4">
+            <div class="d-flex justify-content-around align-items-center">
+                <div class="mx-3">
+                    <a href="/home-page.html">
+                        <box-icon name='spa'></box-icon>
+                    </a>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <a href="streetwear/streetwear-page.html" class="text-decoration-none text-black px-3 "><span>StreetWear</span></a>
+                    <a href="sportwear/sportwear-page.html" class="text-decoration-none text-black px-3 "><span>SportWear</span></a>
+                    <a href="vintage/vintage-page.html" class="text-decoration-none text-black px-3 "><span>Vintage</span></a>
+                    <a href="casualChic/casualChic-page.html" class="text-decoration-none text-black px-3 "><span>CasualChic</span></a>
+                    <a href="minimalista/minimalista-page.html" class="text-decoration-none text-black px-3 "><span>Minimalista</span></a>
+                    <a href="romantic/romantic-page.html" class="text-decoration-none text-black px-3 "><span>Romantico</span></a>
+                    <a href="classico/classico-page.html" class="text-decoration-none text-black px-3 "><span>Clássico</span></a>
+                    <a href="gotico/gotico-page.html" class="text-decoration-none text-black px-3 "><span>Gótico</span></a>
+                </div>
+
+                <div class="d-flex flex-row">
+                    <div class="search-box">
+                        <input type="text" class="search-text" placeholder="Pesquisar">
+                        <a href="#" class="search-btn"><box-icon name='search'></box-icon></a>
+                    </div>
+                    <a href="contact.html"><box-icon class="mx-3 mt-1" name='message' flip='horizontal'></box-icon></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------->
+
+
+
+    <!-- Conteúdo -->
+    <div class="font-2 bg-pastel p-3 align-items-center text-center col-xl-7 mx-auto">
+        <hr>
+        <div id="serviços" class="d-flex flex-column m-2">
+            <span class="t-tittle">Serviços</span>
+            <span class="my-2">“Você nunca terá uma segunda chance de causar uma primeira impressão”</span>
+        </div>
+        <div class="d-flex flex-column mt-5">
+            <span class="text-center fw-bold">SOBRE SE VESTIR</span>
+            <br>
+            <span class="t-indent px-4">Vestir é um gesto diário. Esse hábito pode ser feito de
+                maneira consciente ou inconsciente. Na ponta do lápis de uma agenda cheia e um dia corrido, a
+                última coisa que a gente quer, é perder tempo pensando e provando roupas. Não é mesmo?</span>
+            <br>
+            <span class="t-indent px-4">Nestes casos, as chances de você vestir algo que não te
+                deixa tão bem, usar muitas roupas confortáveis porém não tão elegantes, ou cair na velha
+                sensação de estar sempre com a mesma roupa, são grandes, pois você está fazendo isso no piloto
+                automático.</span>
+            <br>
+        </div>
+        <hr>
+        <div id="modalidade-pessoal" class="d-flex flex-column">
+            <span class="fw-bold mt-4 mb-5">MODALIDADE PESSOAL</span>
+            <div class="px-4 my-4">
+                <span>CONSULTORIA DE IMAGEM E ESTILO COMPLETO</span><br><br>
+                <span>Este modelo engloba os seguintes serviços: análise de estilo pessoal, análise de rosto e silhueta, coloração pessoal, revitalização de seu guarda-roupa, personal shopper e coordenação de looks.</span>
+            </div>
+            <div class="px-4 my-4">
+                <span>CONSULTORIA DE IMAGEM E ESTILO PLUS SIZE</span><br><br>
+                <span>Todo trabalho da consultoria focado especificamente para o público plus size.</span>
+            </div>
+            <div class="px-4 my-4">
+                <span>CONSULTORIA DE IMAGEM E ESTILO COMPACTO</span><br><br>
+                <span>Neste modelo, você pode optar por uma ou mais etapas da consultoria separadamente. São oferecidos: coloração pessoal; análise de estilo pessoal + silhueta; revitalização de guarda-roupa; personal shopper; coordenação de looks.</span>
+            </div>
+        </div>
+        <hr>
+        <div id="modalidade-corporativa" class="d-flex flex-column">
+            <span class="fw-bold mt-4 mb-5">MODALIDADE CORPORATIVA</span>
+            <div class="px-4 my-4">
+                <span>CONSULTORIA PARA EXECUTIVOS</span><br><br>
+                <span>Todo o processo de Consultoria de Imagem e Estilo Completa, porém com enfoque no ambiente corporativo. Tudo para fortalecer sua imagem, transmitir confiança e atingir seus objetivos profissionais.</span>
+            </div>
+            <div class="px-4 my-4">
+                <span>DESENVOLVIMENTO DO CÓDIGO DE VESTIMENTA</span><br><br>
+                <span>É importante que todos os colaboradores de uma empresa participem dos mesmos valores que ela quer transmitir ao mercado. Para isso é fundamental que haja um código de imagem pessoal e etiqueta empresarial bem detalhado e claro para que todos possam seguir.</span>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="d-flex flex-column">
+        <div class="d-flex flex-row align-items-center justify-content-center">
+            <div><img class="img-fluid img-sobre" src="../images/img-sobre-1.jpg" alt="..."></div>
+
+            <div class="position-relative d-flex">
+                <img class="img-fluid mx-auto d-block img-sobre-txt" src="../images/img-sobre-textura.jpg">
+                <span class="position-absolute top-50 start-50 translate-middle text-sobre"><strong>Seu Estilo</strong><br>Nossos serviços ajudam você a cuidar com mais carinho, consciência e autonomia da sua imagem pessoal e profissional. Seu olhar fica mais apurado e sua presença mais poderosa!</span>
+            </div>
+
+            <div><img class="img-fluid img-sobre" src="../images/img-sobre-2.jpg" alt="..."></div>
+        </div>
+
+        <div class="d-flex flex-row align-items-center justify-content-center">
+            <div class="position-relative d-flex">
+                <img class="img-fluid mx-auto d-block img-sobre-txt" src="../images/img-sobre-textura.jpg">
+                <span class="position-absolute top-50 start-50 translate-middle text-sobre"><strong>Sua Beleza</strong><br>Sua beleza é única e o nosso olhar é diverso. Trabalhamos com uma consultoria de imagem que acolhe, respeita e celebra quem você é.</span>
+            </div>
+
+            <div><img class="img-fluid img-sobre" src="../images/img-sobre-3.jpg" alt=""></div>
+
+            <div class="position-relative d-flex">
+                <img class="mx-auto d-block img-fluid img-sobre-txt" src="../images/img-sobre-textura.jpg">
+                 <span class="position-absolute top-50 start-50 translate-middle text-sobre"><strong>Sua Economia</strong><br>Mais de 90% dos clientes que já passaram pela consultoria de imagem com Ana relatam uma redução significativa nos gastos com o guarda-roupa. Nosso método privilegia o aproveitamento do que você já possui. Comprar no próprio guarda-roupa é intenligente e um grande prazer!</span>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Mapa -->
+    <div class="d-flex flex-column align-items-center justify-content-center my-5 pt-4">
+        <span class="fs-1 font-2 my-4"> Onde Estamos</span>
+        <iframe style="width: 80vw;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.4510166985524!2d-46.98555898969912!3d-18.9556787821501!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94afba7454d91e11%3A0xfa2abba74407e32b!2sIFTM%20-%20Campus%20Patroc%C3%ADnio!5e0!3m2!1spt-BR!2sbr!4v1701133899987!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-black mt-1 mt-xl-4 mx-0">
+        <div class="column text-center">
+            <div class="row py-5 mx-0">
+                <a href="contact.html" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Contato | Acessoria</h4>
+                </a>
+                <a href="sobre.html" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Sobre a empresa</h4>
+                </a>
+                <a href="termos.html" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Termos de Segurança</h4>
+                </a>
+                <a href="termos.html" class="text-decoration-none py-1">
+                    <h4 class="t-footer">Termos de Privacidade</h4>
+                </a>
+            </div>
+            <div class="row mx-3">
+                <h4 class="text-light py-3 b-footer t-footer">Todos os direitos reservados.<br>Outubro,
+                    2023.<br>Lotus Consultoria</h4>
+            </div>
+            <div class="p-2"></div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="/main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

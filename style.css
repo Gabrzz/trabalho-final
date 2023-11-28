@@ -31,11 +31,12 @@ body {
         width: 100vw;
     }
 
-    
+    /*
     .bg-xl-pastel {
         background-image: url(images/desktop/fundo.jpg);
         background-size: 100%;
     }
+    */
     .bg-freestyle{
         background-image: url(images/desktop/fundo.jpg);
         background-repeat: no-repeat;
@@ -169,6 +170,24 @@ body {
     .carousel-config{
         border: 5px dotted;
         max-width: 320px;
+    }
+
+    .font-2{
+        font-family: Lexend;
+    }
+
+    .img-sobre{
+        filter: grayscale(100);
+    }
+    .img-sobre-txt{
+        filter: grayscale(100) brightness(.4);
+    }
+    .text-sobre{
+        font-family: Lexend;
+        line-height: 26px;
+        font-size: 14px;
+        color: white;
+        text-align: center;
     }
 
 
@@ -487,10 +506,14 @@ body {
         font-weight: 400;
         line-height: normal;
     }
+    .font-2{
+        font-family: Lexend;
+    }
 
     .carousel-config{
         width: 100vw;
     }
+
 
     textarea::placeholder,
     input::placeholder {

@@ -1,8 +1,13 @@
-function logSubmit(event) {
-    log.textContent = `Form Submitted! Timestamp: ${event.timeStamp}`;
-    event.preventDefault();
-  }
-  
-  const form = document.getElementById("form");
-  const log = document.getElementById("log");
-  form.addEventListener("submit", logSubmit);
+
+
+function redirectSobre() {
+  window.location.href = "pages/sobre.html";
+}
+
+function redirectSobreModalidadePessoal() {
+  window.location.href = "pages/sobre.html#modalidade-pessoal";
+}
+
+function redirectSobreModalidadeCorporativa() {
+  window.location.href = "pages/sobre.html#modalidade-corporativa";
+}

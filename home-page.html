@@ -79,6 +79,7 @@
 
     <!-- HEADER PC ---------------------->
     <div id="display-none-mobile" class="col-12 mb-3">
+        
         <div class="bg-white menu-f py-4">
             <div class="d-flex justify-content-around align-items-center">
                 <div class="mx-3">
@@ -209,15 +210,35 @@
 
     <!-- Conteúdo PC -->
     <div id="display-none-mobile" class="">
-        <div><img src="images/desktop/img-promotion.jpg" alt="Promoção" class="w-100"></div>
+        <div>
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                        <img src="images/desktop/img-promotion.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="images/desktop/img-promotion-2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="images/desktop/img-promotion-3.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="6000">
+                        <img src="images/desktop/img-promotion-4.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev"></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next"></button>
+              </div>
+        </div>
+
         <div class="d-flex flex-column text-center my-3 p-3">
             <span class="t-tittle text-black fs-3 mb-2">" Você nunca terá uma segunda chance de causar uma primeira impressão "</span>
-            <a href="#" class="m-3"><button class="btn btn-lg btn-dark t-tittle fs-4 rounded-3">Ver serviços</button></a>
+            <a href="pages/sobre.html" class="m-3"><button class="btn btn-lg btn-dark t-tittle fs-4 rounded-3">Ver serviços</button></a>
         </div>
 
         <div class="mt-5 mb-3 mx-auto col-4 text-center"><span class="fs-4 font">Imagem singular para uma vida plural!</span></div>
         <div class="d-flex flex-row mb-2 mx-auto justify-content-center">
-            <div id="m-pessoal" class="position-relative">
+            <div id="m-pessoal" class="position-relative" onclick="redirectSobreModalidadePessoal()">
                 <img id="m-pessoal-img" class="img-fluid" src="images/desktop/modalidade-pessoal.jpg" alt="modalidade-pessoal">
                 <div id="m-pessoal-txt" class="position-absolute top-50 start-50 translate-middle text-center">
                     <span class="fs-3 text-light">Modalidade</span><br>
@@ -226,7 +247,7 @@
                 </div>
             </div>
 
-            <div id="lotus" class="position-relative">
+            <div id="lotus" class="position-relative" onclick="redirectSobre()">
                 <img id="lotus-img" class="img-fluid" src="images/desktop/lotus.jpg" alt="lotus">
                 <div id="lotus-txt" class="position-absolute top-50 start-50 translate-middle text-center">
                     <span class="fs-3 text-light">Acessoria</span><br>
@@ -235,7 +256,7 @@
                 </div>
             </div>
 
-            <div id="m-corporativo" class="position-relative">
+            <div id="m-corporativo" class="position-relative" onclick="redirectSobreModalidadeCorporativa()">
                 <img id="m-corporativo-img" class="img-fluid" src="images/desktop/modalidade-corporativa.jpg" alt="modalidade-corporativa">
                 <div id="m-corporativo-txt" class="position-absolute top-50 start-50 translate-middle text-center">
                     <span class="fs-3 text-light">Modalidade</span><br>
@@ -280,7 +301,7 @@
                 <!-- Organizar para PC -- Linha 1 ---->
 
                 <div class="row">
-                    <a href="/pages/streetwear/streetwear-page.html">
+                    <a href="pages/streetwear/streetwear-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block shadow" src="images/img-streetwear.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">StreetWear</h1>
@@ -289,7 +310,7 @@
                 </div>
 
                 <div class="row">
-                    <a href="/pages/sportwear/sportwear-page.html">
+                    <a href="pages/sportwear/sportwear-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block shadow" src="images/img-sportwear.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">SportWear</h1>
@@ -298,7 +319,7 @@
                 </div>
 
                 <div class="row">
-                    <a href="/pages/vintage/vintage-page.html">
+                    <a href="pages/vintage/vintage-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block shadow" src="images/img-vintage.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">Vintage</h1>
@@ -307,7 +328,7 @@
                 </div>
 
                 <div class="row">
-                    <a href="/pages/casualChic/casualChic-page.html">
+                    <a href="pages/casualChic/casualChic-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block shadow" src="images/img-casualchic.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">CasualChic</h1>
@@ -321,7 +342,7 @@
             <div class="d-xl-flex justify-content-xl-evenly mt-xl-3">
                 <!-- Organizar para PC -- Linha 2 ---->
                 <div class="row">
-                    <a href="/pages/minimalista/minimalista-page.html">
+                    <a href="pages/minimalista/minimalista-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block shadow" src="images/img-minimalista.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">Minimalista</h1>
@@ -330,7 +351,7 @@
                 </div>
 
                 <div class="row">
-                    <a href="/pages/romantic/romantic-page.html">
+                    <a href="pages/romantic/romantic-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block" src="images/img-romantic.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">Romantico</h1>
@@ -339,7 +360,7 @@
                 </div>
 
                 <div class="row">
-                    <a href="/pages/classico/classico-page.html">
+                    <a href="pages/classico/classico-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block" src="images/img-classic.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">Clássico</h1>
@@ -348,7 +369,7 @@
                 </div>
 
                 <div class="row">
-                    <a href="/pages/gotico/gotico-page.html">
+                    <a href="pages/gotico/gotico-page.html">
                         <div class="position-relative d-flex my-2 h-card">
                             <img class="rounded mx-auto d-block" src="images/img-gotico.jpg">
                             <h1 class="position-absolute top-50 start-50 translate-middle t-img">Gótico</h1>
@@ -393,8 +414,6 @@
             <div class="p-2"></div>
         </div>
     </footer>
-
-
 
 
     <script src="/main.js"></script>
