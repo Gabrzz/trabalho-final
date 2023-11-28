@@ -282,6 +282,14 @@ body {
         border-radius: 40px;
     }
 
+    #index{
+        cursor: url('svg/bx-pointer.svg'), auto;
+    }
+    
+    #index-button{
+        cursor: url('svg/pointinghand.svg'), auto;
+    }
+
 
     /* -------- Home-page Hovers -------- */
 
