@@ -146,20 +146,40 @@
 
     <!-- Conteúdo MOBILE -->
     <div id="display-none" class="p-3 bg-pastel">
-        <img src="images/img-promotion.jpg" alt="Promoção" class="w-100 mb-2">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/img-promotion.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/img-promotion-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/img-promotion-3.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="images/img-promotion-4.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev"></button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next"></button>
+        </div>
+        
 
         <hr>
         <div>
             <div class="text-center mt-4 px-3 py-4">
                 <span class="t-stittle text-black fs-6">Você nunca terá uma segunda chance de causar uma primeira impressão!</span>
-                <a href="#" class="t-tittle"><button class="btn btn-lg btn-dark rounded-3 mt-4 col-10">Ver serviços</button></a>
+                <a href="pages/contact.html" class="t-tittle"><button class="btn btn-lg btn-dark rounded-3 mt-4 col-10">Ver serviços</button></a>
             </div>
         </div>
         <hr>
 
         <div class="mt-4">
             <div class="d-flex flex-column col-12 my-4">
-                <div id="m-pessoal" class="position-relative">
+                <div id="m-pessoal" class="position-relative" onclick="redirectSobreModalidadePessoal()">
                     <img id="m-pessoal-img" class="img-fluid" src="images/desktop/modalidade-pessoal.jpg"
                         alt="modalidade-pessoal">
                     <div id="m-pessoal-txt" class="position-absolute top-50 start-50 translate-middle text-center">
@@ -169,7 +189,7 @@
                     </div>
                 </div>
 
-                <div id="lotus" class="position-relative">
+                <div id="lotus" class="position-relative" onclick="redirectSobre()">
                     <img id="lotus-img" class="img-fluid" src="images/desktop/lotus.jpg" alt="lotus">
                     <div id="lotus-txt" class="position-absolute top-50 start-50 translate-middle text-center">
                         <span class="fs-6 text-light">Acessoria</span><br>
@@ -178,7 +198,7 @@
                     </div>
                 </div>
 
-                <div id="m-corporativo" class="position-relative">
+                <div id="m-corporativo" class="position-relative" onclick="redirectSobreModalidadeCorporativa()">
                     <img id="m-corporativo-img" class="img-fluid" src="images/desktop/modalidade-corporativa.jpg"
                         alt="modalidade-corporativa">
                     <div id="m-corporativo-txt" class="position-absolute top-50 start-50 translate-middle text-center">
