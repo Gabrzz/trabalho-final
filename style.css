@@ -486,7 +486,7 @@ body {
 
     .start-page {
         font-family: 'Lexend', sans-serif;
-        background-image: url(/images/start-page-background.jpg);
+        background-image: url(images/start-page-background.jpg);
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: center;
